@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #55efc4, #ffffff);
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    height: 80px;
+}
+
+hr {
+    width: 20%;
+    left: 40%;
+}
+
+.note-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    min-height: 280px;
+}
+
+.note-title ,
+.notes-input {
+    display: inline;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    background: white;
+    color: #000;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.notes-taken-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 460px);
+    grid-auto-rows: minmax(120px, auto);
+}
+
+.note-taken {
+    margin: 20px 50px 0 20px;
+    padding: 5px;
+    background: #ecf0f1;
+    border: 2px solid #95a5a6;
+    border-radius: 15px;
+}
+
+.title-of-note {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.detail-btn {
+    border-radius: 8px;
+    background: white;
+}
+
+.detail-btn:hover {
+    background: #55efc4;
+}

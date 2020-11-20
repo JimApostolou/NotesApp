@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        Note app
+    </header>
+    <hr>
+    <div class="note-grid">
+        <div class="note-title">
+            <h3>Title:</h3>
+            <input type="text" id="title-input">
+        </div>
+        <div class="notes-input">
+            <h3>Notes:</h3>
+            <textarea rows="5" cols="17" id="content-textarea"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+    </div>
+    <div class="notes-taken-grid"  id="notes-added">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
