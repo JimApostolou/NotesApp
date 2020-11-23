@@ -52,10 +52,13 @@ hr {
 
 .note-taken {
     margin: 20px 50px 0 20px;
-    padding: 5px;
+    padding: 0px 5px 20px 5px;
     background: #ecf0f1;
     border: 2px solid #95a5a6;
     border-radius: 15px;
+    box-shadow: 2px 3px 15px #222f3e,4px 6px 15px #576574,6px 9px 15px #8395a7;
+    overflow: auto;
+    position: relative;
 }
 
 .title-of-note {
@@ -66,8 +69,27 @@ hr {
 .detail-btn {
     border-radius: 8px;
     background: white;
+    position: absolute;
+    bottom: 5px;
 }
 
 .detail-btn:hover {
     background: #55efc4;
+}
+
+.delete-btn {
+    border: none;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    color: #ff6b6b;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    transition: all .3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff6b6b;
+    color: #ecf0f1;
 }
